@@ -8,10 +8,17 @@ export const LoginFormComponent = styled.div`
    width: 40vw;
    min-height: 100vh;
    justify-content: center;
+   @media (max-width: 528px) {
+        width: 80vw;
+      }
    .loginHeader{
        font-size: 35px;
        font-weight: bold;
        color: #000;
+       @media (max-width: 528px) {
+        font-size: 25px;
+        width: 80vw;
+      }
    }
    .emailbox {
        border: none;
@@ -19,12 +26,18 @@ export const LoginFormComponent = styled.div`
        border-bottom: 2px solid #000;
        font-size: 24px;
        font-weight: normal;
+     /* @media (max-width: 528px) {
+        font-size: 20px;
+    } */
    }
    .emailbox::placeholder {
      color: #000;
      text-align: center;
      font-size: 24px;
      font-weight: normal;
+     /* @media (max-width: 528px) {
+        font-size: 20px;
+    } */
     }
     *:focus {
       outline: none;
@@ -38,4 +51,5 @@ export const LoginFormComponent = styled.div`
         font-size: 24px;
         margin: 20px 0px;
     }
+    
 `;

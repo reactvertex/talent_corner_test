@@ -11,7 +11,9 @@ function LoginForm () {
         password : ''
     })
     useEffect(() =>{
-        localStorage.clear()
+        if(localStorage.getItem('email')){
+            localStorage.clear()
+        }
     },[])
 
       const handleChange = (e) =>{
